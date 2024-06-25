@@ -2,6 +2,9 @@
 #### Paper: Hamed Karimi, and Reza Samavi. "Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction." 
 ##### Accepted in The 13th Symposium on Conformal and Probabilistic Prediction with Applications (COPA 2024). To be published in Proceedings of Machine Learning Research (PMLR), vol. 230 (2024).
 
+## What is Evidential Conformal Prediction (ECP)?
+Evidential Conformal Prediction (ECP) is an uncertainty quantification method for deep classifiers to generate the conformal prediction sets. This method is designed based on a non-conformity score function that has its roots in Evidential Deep Learning (EDL) as a method of quantifying model (epistemic) uncertainty in DNN classifiers. We use evidence that are derived from the logit values of target labels to compute the components of a novel non-conformity score function: the heuristic notion of uncertainty in CP, uncertainty surprisal, and expected utility. The extensive experimental evaluation (reported in the paper) demonstrates that ECP outperforms three state-of-the-art methods for generating CP sets, in terms of their set sizes and adaptivity while maintaining the coverage of true labels.
+
 ## Getting Started
 This is a brief description on the implementation files for the paper.
 
@@ -39,10 +42,10 @@ Under "results" folder, you should also create an empty folder named "data", for
 2. `loss.py`: This file contains other helper functions related to loss function.
 
 3. `ecp_load.py`: This is a main file to validate the selected pretrained model over Imagenet-Val or Imagenet-V2 datasets, and
-print the results for ECP method and other SOTA methods.
+print the results for ECP method and other SoTA methods.
 
 4. `adapt_comp.py`: This is a main file to validate all the pretrained models over Imagenet-Val or Imagenet-V2 datasets, and
-print the results for set size and adaptiveness metrics in ECP method and other SOTA methods.
+print the results for set size and adaptiveness metrics in ECP method and other SoTA methods.
 
 - Note that ImageNet-Val_DATASET_SIZE = 50000 and ImageNet-V2_DATASET_SIZE = 10000.
 - In `ecp_load.py`, you can choose (uncomment) only one desired pretrained model for validation and applying the CP methods.
@@ -52,5 +55,11 @@ print the results for set size and adaptiveness metrics in ECP method and other 
 	- `alpha_val = 0.1 # user-specified coverage error level`
 
 ## Citation
+Karimi, Hamed, and Reza Samavi. "Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction." arXiv preprint [arXiv:2406.10787](https://arxiv.org/abs/2406.10787) (2024).
 
-
+@article{karimi2024evidential,
+  title={Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction},
+  author={Karimi, Hamed and Samavi, Reza},
+  journal={arXiv preprint arXiv:2406.10787},
+  year={2024}
+}
