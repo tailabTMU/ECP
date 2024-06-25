@@ -37,6 +37,7 @@ This is a brief description on the implementation files for the paper.
 to set `root_path` in the first part of `utils.py` file, you need to set your own path to the your directory containing two empty folders named: 
 "data" for downloading and storing the input datasets, and "results" for saving the graphs and figures of results. 
 Under "results" folder, you should also create an empty folder named "data", for storing the raw results produced during experiments.
+
 - You can also set your `SEED` for randomness and reproducability in the first part of `utils.py`.
  
 2. `loss.py`: This file contains other helper functions related to loss function.
@@ -55,11 +56,5 @@ print the results for set size and adaptiveness metrics in ECP method and other 
 	- `alpha_val = 0.1 # user-specified coverage error level`
 
 ## Citation
-Karimi, Hamed, and Reza Samavi. "Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction." arXiv preprint [arXiv:2406.10787](https://arxiv.org/abs/2406.10787) (2024).
+Karimi, H., & Samavi, R. (2024). Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction. arXiv preprint [arXiv:2406.10787](https://arxiv.org/abs/2406.10787) ([BibTeX](https://scholar.googleusercontent.com/scholar.bib?q=info:-Xtg9_TC0l8J:scholar.google.com/&output=citation&scisdr=ClHThqE0EInaptJWbl0:AFWwaeYAAAAAZntQdl3aRCEtfJtLID9g02Gmuw4&scisig=AFWwaeYAAAAAZntQdlwUeuU9W1jfk0VsQ9cLrm0&scisf=4&ct=citation&cd=-1&hl=en)).
 
-@article{karimi2024evidential,
-  title={Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction},
-  author={Karimi, Hamed and Samavi, Reza},
-  journal={arXiv preprint arXiv:2406.10787},
-  year={2024}
-}
