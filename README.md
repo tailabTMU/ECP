@@ -21,6 +21,7 @@ This is a brief description on the implementation files for the paper.
 - `multiprocessing`
 
 ***For downloading and installing ImageNet datasets (Imagenet-Val and Imagenet-V2):***
+
 `pip install git+https://github.com/modestyachts/ImageNetV2_pytorch `
 
 ***
