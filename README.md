@@ -1,6 +1,6 @@
 # Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction
 #### Paper: Hamed Karimi, and Reza Samavi. "Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction." 
-##### Accepted in The 13th Symposium on Conformal and Probabilistic Prediction with Applications (COPA 2024). To be published in To be published in Proceedings of Machine Learning Research (PMLR), vol. 230 (2024).
+##### Accepted in The 13th Symposium on Conformal and Probabilistic Prediction with Applications (COPA 2024). To be published in Proceedings of Machine Learning Research (PMLR), vol. 230 (2024).
 
 ## Getting Started
 This is a brief description on the implementation files for the paper.
