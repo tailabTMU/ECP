@@ -3,14 +3,14 @@
 ##### Accepted in The 13th Symposium on Conformal and Probabilistic Prediction with Applications (COPA 2024). To be published in Proceedings of Machine Learning Research (PMLR), vol. 230 (2024).
 
 ## What is Evidential Conformal Prediction (ECP)?
-Evidential Conformal Prediction (ECP) is an uncertainty quantification method for deep classifiers to generate the conformal prediction sets. This method is designed based on a non-conformity score function that has its roots in Evidential Deep Learning (EDL) as a method of quantifying model (epistemic) uncertainty in DNN classifiers. We use evidence that are derived from the logit values of target labels to compute the components of a novel non-conformity score function: the heuristic notion of uncertainty in CP, uncertainty surprisal, and expected utility. The extensive experimental evaluation (reported in the paper) demonstrates that ECP outperforms three state-of-the-art methods for generating CP sets, in terms of their set sizes and adaptivity while maintaining the coverage of true labels.
+<div align="justify">Evidential Conformal Prediction (ECP) is an uncertainty quantification method for deep classifiers to generate the conformal prediction sets. This method is designed based on a non-conformity score function that has its roots in Evidential Deep Learning (EDL) as a method of quantifying model (epistemic) uncertainty in DNN classifiers. We use evidence that are derived from the logit values of target labels to compute the components of a novel non-conformity score function: the heuristic notion of uncertainty in CP, uncertainty surprisal, and expected utility. The extensive experimental evaluation (reported in the paper) demonstrates that ECP outperforms three state-of-the-art methods for generating CP sets, in terms of their set sizes and adaptivity while maintaining the coverage of true labels.</div>
 
 ## Getting Started
 This is a brief description on the implementation files for the paper.
 
 ### Prerequisites
 
-***Required Python Libraries and Packages (with their latest versions) to be Installed (All Already Imported in `utils.py`)***
+**Required Python Libraries and Packages (with their latest versions) to be Installed (All Already Imported in `utils.py`)**
 
 - `torch`
 - `torchvision`
@@ -23,7 +23,7 @@ This is a brief description on the implementation files for the paper.
 - `os`
 - `multiprocessing`
 
-***For downloading and installing ImageNet datasets (Imagenet-Val and Imagenet-V2):***
+**For downloading and installing ImageNet datasets (*Imagenet-Val* and *Imagenet-V2*):**
 
 `pip install git+https://github.com/modestyachts/ImageNetV2_pytorch `
 
