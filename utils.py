@@ -568,8 +568,6 @@ def cp_generator(logits, labels, temp_scale=1, n=5000, alpha=0.1, method='ecp', 
     cal_labels, val_labels = labels[idx], labels[~idx]
     cal_labels = cal_labels.astype(int)
     val_labels = val_labels.astype(int)
-#     cal_probs = probs[idx,:]
-#     cal_labels = labels[idx]
 
     #############################################################################
     ### Get scores. calib_X.shape[0] == calib_Y.shape[0] == n
@@ -578,22 +576,17 @@ def cp_generator(logits, labels, temp_scale=1, n=5000, alpha=0.1, method='ecp', 
         cal_smx, val_smx = smx_probs[idx,:], smx_probs[~idx,:]
         cal_belief, val_belief = belief[idx,:], belief[~idx,:]
         cal_uncer, val_uncer = uncer[idx], uncer[~idx]
-        # beta_penalty = 2
         cal_rank = np.where(cal_pi == cal_labels)[1] #+ 1
         cal_rank = cal_rank.reshape(-1,1)
         cal_rank_all = cal_pi.argsort(1)
         ###########
-        # evid_scores = ((1/num_classes) * np.log(cal_probs)) / ( (1 - (cal_rank/num_classes)) * (cal_probs**2) * (cal_belief) + 1e-8) # * (cal_belief)
-        evid_scores = ((1/num_classes) * np.log(cal_probs)) / ( (cal_smx) * (cal_probs**2) * (1 - (cal_rank_all/num_classes)) + 1e-8) #  * (1 - (cal_rank_all/num_classes)**2) 
-        ## (1 - (np.maximum(cal_rank - 5, 0) / num_classes))
-        cal_scores = ((-1) * evid_scores * cal_uncer) #* (1 - (cal_rank_all/num_classes)**2) #- (np.maximum(cal_rank_all - 100, 0) / num_classes) #+ (cal_rank/num_classes)**(1/2) # * (cal_rank**(1/beta_penalty)) # * ((cal_rank / num_classes)**beta_penalty)
-        ###### cal_scores = 1 - np.exp((-1) * cal_scores) # softmax(cal_scores, axis=1)
-        cal_scores = (cal_scores / np.max(cal_scores, axis=1).reshape(-1,1)) #- (np.maximum(cal_rank - 100, 0) / num_classes)
+        evid_scores = ((1/num_classes) * np.log(cal_probs)) / ( (cal_smx) * (cal_probs**2) * (1 - (cal_rank_all/num_classes)) + 1e-8) 
+        cal_scores = ((-1) * evid_scores * cal_uncer) 
+        cal_scores = (cal_scores / np.max(cal_scores, axis=1).reshape(-1,1)) 
         
-        cal_scores = np.take_along_axis(cal_scores, cal_pi, axis=1) # cal_scores * (1 - (np.maximum(cal_rank_all - 10, 0) / 1000))
-        cal_scores_reg = (cal_scores + reg_vec) #**(1/2) # - (np.maximum(np.arange(num_classes).reshape(1,-1) - 10, 0) / (num_classes)) #
-        cal_scores = cal_scores_reg[np.arange(n), (cal_rank).squeeze()] # - cal_uncer * cal_scores_reg[np.arange(n), (cal_rank).squeeze()] #  cal_rank - 1
-        ##### cal_scores_reg.cumsum(axis=1)[np.arange(n), (cal_rank).squeeze()]  ### np.random.rand(n) *
+        cal_scores = np.take_along_axis(cal_scores, cal_pi, axis=1) 
+        cal_scores_reg = (cal_scores + reg_vec) 
+        cal_scores = cal_scores_reg[np.arange(n), (cal_rank).squeeze()] 
     
     elif method == 'lac':
         cal_srt = np.take_along_axis(cal_probs, cal_pi, axis=1)
@@ -623,19 +616,17 @@ def cp_generator(logits, labels, temp_scale=1, n=5000, alpha=0.1, method='ecp', 
     val_pi = val_probs.argsort(1)[:,::-1]    # indices of descending sorted validation probs
     if method == 'ecp':
         val_rank = val_pi.argsort(1)
-        # evid_scores = ((1/num_classes)* np.log(val_probs)) / ( (1 - (val_rank/num_classes)) * (val_probs**2) * (val_belief) + 1e-8) # * (val_belief)
         evid_scores = ((1/num_classes)* np.log(val_probs)) / ((val_smx) * (val_probs**2) * (1 - (val_rank/num_classes)) + 1e-8) #  
-        val_scores = ((-1) * evid_scores * val_uncer) #* (1 - (val_rank/num_classes)**2) #- (np.maximum(val_rank - 100, 0) / num_classes) #* (1 - (np.maximum(val_rank - 20, 0) / 1000)) #+ (val_rank/num_classes)**(1/2) # * (val_rank**(1/beta_penalty)) # * ((val_rank / num_classes)**beta_penalty) 
+        val_scores = ((-1) * evid_scores * val_uncer) 
         ###########
-        ###### val_scores = 1 - np.exp((-1) * val_scores) # softmax(val_scores, axis=1)
-        val_scores = (val_scores / np.max(val_scores, axis=1).reshape(-1,1)) #- (np.maximum(val_rank - 100, 0) / num_classes)
+        val_scores = (val_scores / np.max(val_scores, axis=1).reshape(-1,1)) 
         
-        val_scores = np.take_along_axis(val_scores, val_pi, axis=1) # val_scores * (1 - (np.maximum(val_rank - 10, 0) / 1000))
+        val_scores = np.take_along_axis(val_scores, val_pi, axis=1) 
         val_scores_reg = (val_scores + reg_vec)
         val_scores = val_scores_reg #.cumsum(axis=1)
         
         indicators = val_scores <= qhat  
-        # indicators = (val_scores - val_uncer * val_scores_reg) <= qhat if rand else (val_scores - val_scores_reg) <= qhat  # np.random.rand(n_val,1) *
+        # indicators = (val_scores - val_uncer * val_scores_reg) <= qhat if rand else (val_scores - val_scores_reg) <= qhat
         
         if disallow_zero_sets: indicators[:,0] = True 
         ### To revert them in their original form of class labels
