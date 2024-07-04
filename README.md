@@ -56,5 +56,5 @@ print the results for set size and adaptiveness metrics in ECP method and other 
 	- `alpha_val = 0.1 # user-specified coverage error level`
 
 ## Citation
-Karimi, H., & Samavi, R. (2024). Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction. arXiv preprint [arXiv:2406.10787](https://arxiv.org/abs/2406.10787) ([BibTeX](https://scholar.googleusercontent.com/scholar.bib?q=info:-Xtg9_TC0l8J:scholar.google.com/&output=citation&scisdr=ClHThqE0EInaptJWbl0:AFWwaeYAAAAAZntQdl3aRCEtfJtLID9g02Gmuw4&scisig=AFWwaeYAAAAAZntQdlwUeuU9W1jfk0VsQ9cLrm0&scisf=4&ct=citation&cd=-1&hl=en)).
+Karimi, H., & Samavi, R. (2024). Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction. arXiv preprint [arXiv:2406.10787](https://arxiv.org/abs/2406.10787) ([BibTeX](https://scholar.googleusercontent.com/scholar.bib?q=info:-Xtg9_TC0l8J:scholar.google.com/&output=citation&scisdr=ClHThqE0EInapi4G4T8:AFWwaeYAAAAAZocA-T_QDOFB9Ot3-ZLzwBjva18&scisig=AFWwaeYAAAAAZocA-XghJuYAkw1mPHw1BpbBO1g&scisf=4&ct=citation&cd=-1&hl=en)).
 
