@@ -5,7 +5,7 @@
 
 ## Project Subtitle 1
 
-<div align="justify">Write your abstract or description here. (1-2 paragraphs; 300-400 words)</div>
+<div align="justify">Write your abstract or description here. (1-2 justified paragraphs; 300-400 words)</div>
 
 You will add one or two infographics, figures, gifs, or animations here after your description using the following syntax:
 
@@ -15,7 +15,7 @@ Using an existing image in the Internet:
 
 Or you can link directly to the image if it is stored in your repository:
 
-![alt text](https://github.com/tailabTMU/ECP/blob/main/test/image.png)
+![alt text](https://github.com/tailabTMU/ECP/blob/main/test/image.webp)
 
 ### Related Publications
 This is a brief description on the implementation files for the paper.
