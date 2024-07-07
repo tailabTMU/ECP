@@ -18,7 +18,9 @@ You will add one or two infographics, figures, gifs, or animations here after yo
 ![alt text](https://github.com/tailabTMU/ECP/blob/main/test/image.webp)
 
 ## Related Publications
-You can list your related publications (with proper and complete citation information) here. You will use bullet points (-) or numbering (1., 2., ...) for the list items.
+You can list your related publications (with proper and complete 
+citation information) here. You will use bullet points (-) or  
+numbering (1., 2., ...) for the list items.
 
 ## Collaborators
 
@@ -30,9 +32,10 @@ You can list your related publications (with proper and complete citation inform
 ---
 
 ## MarkDown File Syntax and Commands
-<!--- Comments are Fun --->
-- New line: <br/>
-- **Bold text**
+
+<!--- Comments are written like this --->
+- New line: <br\>
+- **Bold text** <br />
 - *Italic text*
 - ***Bold and italic text***
   - Indented item 
