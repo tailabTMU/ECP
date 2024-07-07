@@ -19,8 +19,9 @@ You will add one or two infographics, figures, gifs, or animations here after yo
 
 ## Related Publications
 You can list your related publications (with proper and complete 
-citation information) here. You will use bullet points (-) or  
-numbering (1., 2., ...) for the list items.
+citation information) here. You will use bullet points (-) or__  
+numbering (1., 2., ...)__ for the__
+list items.
 
 ## Collaborators
 
