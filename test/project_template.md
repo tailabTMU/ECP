@@ -9,23 +9,23 @@
 
 You will add one or two infographics, figures, gifs, or animations here after your description using the following syntax:
 
-Using an existing image in the Internet:
+- Using an existing image in the Internet:
 
 ![alt text](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*leJxy5cZqSxbN5cSSJRpeA.png)
 
-Or you can link directly to the image if it is stored in your repository:
+- Or you can link directly to the image if it is stored in your repository:
 
 ![alt text](https://github.com/tailabTMU/ECP/blob/main/test/image.webp)
 
 ### Related Publications
-This is a brief description on the implementation files for the paper.
+You can list your related publications (with proper and complete citation information) here. You will use bullet points (-) or numbering for the list items.
 
 ## Collaborators
 
 - [Name 1]
--- Academic Position and/or Affiliation
+  - Academic Position and/or Affiliation
 - [Name 2]
--- Academic Position and/or Affiliation
+  - Academic Position and/or Affiliation
 
 
 **Required Python Libraries and Packages (with their latest versions) to be Installed (All Already Imported in `utils.py`)**
