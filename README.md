@@ -32,7 +32,7 @@ This is a brief description on the implementation files for the paper.
 ***
 
 ### Python Scripts
-
+<div align="justify">
 1. `utils.py`: This file contains all the imported Python and PyTorch packages, the helper functions, data loading, plots, etc.
 
 - Instead of `your path` and `your inner path` in `os.chdir('your path')` and `root_path = os.path.join(os.getcwd(), 'your inner path')` 
@@ -58,7 +58,7 @@ print the results for set size and adaptiveness metrics in ECP method and other 
  n_calib = 15000    # OR 3000 for imagenetv2
  alpha_val = 0.1    # user-specified coverage error level
 ```
-
+</div>
 ## Citation
 Karimi, H., & Samavi, R. (2024). Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction. arXiv preprint [arXiv:2406.10787](https://arxiv.org/abs/2406.10787) ([BibTeX](https://scholar.googleusercontent.com/scholar.bib?q=info:-Xtg9_TC0l8J:scholar.google.com/&output=citation&scisdr=ClHThqE0EInapi4G4T8:AFWwaeYAAAAAZocA-T_QDOFB9Ot3-ZLzwBjva18&scisig=AFWwaeYAAAAAZocA-XghJuYAkw1mPHw1BpbBO1g&scisf=4&ct=citation&cd=-1&hl=en)).
 
