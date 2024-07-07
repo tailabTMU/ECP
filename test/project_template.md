@@ -27,6 +27,10 @@ You can list your related publications (with proper and complete citation inform
 - [Name 2]
   - Academic Position and/or Affiliation
 
+---
+
+## MarkDown File Syntax and Commands
+
 
 **Required Python Libraries and Packages (with their latest versions) to be Installed (All Already Imported in `utils.py`)**
 
@@ -43,7 +47,7 @@ You can list your related publications (with proper and complete citation inform
 
 **For downloading and installing ImageNet datasets (*Imagenet-Val* and *Imagenet-V2*):**
 
-``pip install git+https://github.com/modestyachts/ImageNetV2_pytorch ``
+`pip install git+https://github.com/modestyachts/ImageNetV2_pytorch `
 
 ***
 
