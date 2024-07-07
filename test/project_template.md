@@ -15,7 +15,7 @@ Using an existing image in the Internet:
 
 Or you can link directly to the image if it is stored in your repository:
 
-![alt text](https://github.com/tailabTMU/ECP/tree/main/test/image.png?raw=true)
+![alt text](https://github.com/tailabTMU/ECP/tree/main/test/image.png)
 
 ### Related Publications
 This is a brief description on the implementation files for the paper.
