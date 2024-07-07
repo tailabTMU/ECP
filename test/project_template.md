@@ -7,7 +7,7 @@
 
 <div align="justify">Write your abstract or description here. (1-2 justified paragraphs; 300-400 words)</div>
 
-You will add one or two infographics, figures, gifs, or animations here after your description using the following syntax:
+You will add one or two infographics, figures, gifs, or animations here after your description with captions using the following syntax:
 
 - Using an existing image in the Internet:
 
