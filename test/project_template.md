@@ -11,11 +11,11 @@ You will add one or two infographics, figures, gifs, or animations here after yo
 
 Using an existing image in the Internet:
 
-![alt text](http://url/to/img.png)
+![alt text](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*leJxy5cZqSxbN5cSSJRpeA.png)
 
 Or you can link directly to the image if it is stored in your repository:
 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/tailabTMU/ECP/tree/main/test/image.png?raw=true)
 
 ### Related Publications
 This is a brief description on the implementation files for the paper.
