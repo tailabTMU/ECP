@@ -1,5 +1,7 @@
 # Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction
+
 #### Paper: Hamed Karimi, and Reza Samavi. "Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction." 
+
 ##### Accepted in The 13th Symposium on Conformal and Probabilistic Prediction with Applications (COPA 2024). To be published in Proceedings of Machine Learning Research (PMLR), vol. 230 (2024).
 
 ## What is Evidential Conformal Prediction (ECP)?
@@ -50,11 +52,13 @@ print the results for set size and adaptiveness metrics in ECP method and other 
 
 - Note that ImageNet-Val_DATASET_SIZE = 50000 and ImageNet-V2_DATASET_SIZE = 10000.
 - In `ecp_load.py`, you can choose (uncomment) only one desired pretrained model for validation and applying the CP methods.
-- Also, in both `ecp_load.py` and `adapt_comp.py`, you can set/change the values for the following variables: 
-	- `input_data = 'imagenet' # OR 'imagenetv2'`
-	- `n_calib = 15000 # OR 3000 for imagenetv2`
-	- `alpha_val = 0.1 # user-specified coverage error level`
+- Also, in both `ecp_load.py` and `adapt_comp.py`, you can set/change the values for the following variables:
+```
+ input_data = 'imagenet'    # OR 'imagenetv2'
+ n_calib = 15000    # OR 3000 for imagenetv2
+ alpha_val = 0.1    # user-specified coverage error level
+```
 
 ## Citation
-Karimi, H., & Samavi, R. (2024). Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction. arXiv preprint [arXiv:2406.10787](https://arxiv.org/abs/2406.10787) ([BibTeX](https://scholar.googleusercontent.com/scholar.bib?q=info:-Xtg9_TC0l8J:scholar.google.com/&output=citation&scisdr=ClHThqE0EInaptJWbl0:AFWwaeYAAAAAZntQdl3aRCEtfJtLID9g02Gmuw4&scisig=AFWwaeYAAAAAZntQdlwUeuU9W1jfk0VsQ9cLrm0&scisf=4&ct=citation&cd=-1&hl=en)).
+Karimi, H., & Samavi, R. (2024). Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction. arXiv preprint [arXiv:2406.10787](https://arxiv.org/abs/2406.10787) ([BibTeX](https://scholar.googleusercontent.com/scholar.bib?q=info:-Xtg9_TC0l8J:scholar.google.com/&output=citation&scisdr=ClHThqE0EInapi4G4T8:AFWwaeYAAAAAZocA-T_QDOFB9Ot3-ZLzwBjva18&scisig=AFWwaeYAAAAAZocA-XghJuYAkw1mPHw1BpbBO1g&scisf=4&ct=citation&cd=-1&hl=en)).
 
