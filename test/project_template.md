@@ -18,9 +18,7 @@ You will add one or two infographics, figures, gifs, or animations here after yo
 ![alt text](https://github.com/tailabTMU/ECP/blob/main/test/image.webp)
 
 ### Related Publications
-You can list your related publications 
-
-(with proper and complete citation information) here.\ You will use bullet points<br/> (-) or numbering for the list items.
+You can list your related publications (with proper and complete citation information) here. You will use bullet points (-) or numbering for the list items.
 
 ## Collaborators
 
@@ -33,6 +31,13 @@ You can list your related publications
 
 ## MarkDown File Syntax and Commands
 
+- New line: <br/>
+- **Bold text**
+- *Italic text*
+- ***Bold and italic text***
+- Indented item 
+- `Code-like text` 
+- ``` Code Block ```
 
 **Required Python Libraries and Packages (with their latest versions) to be Installed (All Already Imported in `utils.py`)**
 
