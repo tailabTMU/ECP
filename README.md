@@ -62,11 +62,17 @@ print the results for set size and adaptiveness metrics in ECP method and other 
 ## Citation
 Karimi, H., & Samavi, R. (2024). Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction. arXiv preprint [arXiv:2406.10787](https://arxiv.org/abs/2406.10787).
 ```
-@article{karimi2024evidential,
-  title={Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction},
-  author={Karimi, Hamed and Samavi, Reza},
-  journal={arXiv preprint arXiv:2406.10787},
-  year={2024}
+@InProceedings{karimi2024evidential,
+  title = 	 {Evidential Uncertainty Sets in Deep Classifiers Using Conformal Prediction},
+  author =       {Karimi, Hamed and Samavi, Reza},
+  booktitle = 	 {Proceedings of the Thirteenth Symposium on Conformal and Probabilistic Prediction with Applications},
+  pages = 	 {466--489},
+  year = 	 {2024},
+  volume = 	 {230},
+  series = 	 {Proceedings of Machine Learning Research},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v230/main/assets/karimi24a/karimi24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v230/karimi24a.html}
 }
 ```
 
